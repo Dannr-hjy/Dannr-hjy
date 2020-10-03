@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css"integrity="sha384-2PJ2u4NYg6jCNNpv3i1hK9AoAqODy6CdiC+gYiL2DVx+ku5wzJMFNdE3RoWfBIRP"crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"integrity="sha384-aB8rnkAu/GBsQ1q6dwTySnlrrbhqDwrDnpVHR2Wgm8pWLbwUnzDcIROX3VvCbaK+"crossorigin="anonymous">
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>师大滨江C2004班 · 官方网站</title>
+</head>
+<body class="mdui-theme-primary-pink">
+  
+  <div class="mdui-toolbar mdui-color-theme mdui-shadow-3">
+      <i class="mdui-icon material-icons">&#xe80c;</i>
+    
+      <span class="mdui-typo-title">湖南师范大学附属滨江学校 · C2004班</span>
+        <div class="mdui-toolbar-spacer"></div>
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
+      <a href="login/login.html">登录</a>
+  </div>
+  <br>
+  <div class="mdui-container">
+    <a href="../index.html"><button class="mdui-btn mdui-ripple"><i class="mdui-icon material-icons">&#xe31b;</i> 返回</button></a>
+    <h2>第四周积分汇总</h2>
+    <ul class="mdui-list">
+      <a href="../users/1.html">
+        <li class="mdui-list-item">
+          <div class="mdui-list-item-avatar"><img src="../img/dannr.jpg"/></div>
+          <div class="mdui-list-item-content">Dannr · 发布于2020.10.1/17:21</div>
+        </li>
+      </a>
+    </ul>
+    <p><b>&nbsp冠军：第二组！</b></p>
+    <br>
+    
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+
+    <div id="gitalk-container"></div>     
+    <script type="text/javascript">
+    var gitalk = new Gitalk({
+    // gitalk的主要参数
+      clientID: `36544971bb5f0fb942c8`,   //上面获取到的值
+      clientSecret: `a203338f71834fc5e19931472898ca217bef0213`,//上面获取到的值
+      repo: `sdbjc2004gw`,  //您刚才建立仓库的名字
+      owner: 'Dannr',   //你的GitHub用户名字
+      admin: ['Dannr'],  //你的GitHub用户的名字
+      id: 'indow.location.pathname1', //id不能重复，如果重复就会把其他页面的评论引进来
+    });
+      gitalk.render('gitalk-container');
+    </script> 
+    <!-- Gitalk end --> 
+  
+  </div>
+</body>
+</html>
