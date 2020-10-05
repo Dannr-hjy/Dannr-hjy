@@ -4,28 +4,30 @@
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css"integrity="sha384-2PJ2u4NYg6jCNNpv3i1hK9AoAqODy6CdiC+gYiL2DVx+ku5wzJMFNdE3RoWfBIRP"crossorigin="anonymous"/>
     <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"integrity="sha384-aB8rnkAu/GBsQ1q6dwTySnlrrbhqDwrDnpVHR2Wgm8pWLbwUnzDcIROX3VvCbaK+"crossorigin="anonymous">
     </script>
-    <script>
+    <script type="text/ecmascript" src="../script/sha1.js"></script>
+    <script type="text/javascript">
       function myFunction() {
-        var text;
-        text = document.getElementById("numb").value;
-        if (text == "龙腾九霄，遨游四海，四班四班，勇夺桂冠") {
+        var text = document.getElementById("numb").value;
+        var sha = sha1(text);
+        if  (sha == "80322ef4730d7597e2fd3d0e62c9799b4bc8c210") {
           window.location.href="../member/member.html";
         } else {
-          text = "输入错误";
+          text = "访问遭拒";
         }
         document.getElementById("demo").innerHTML = text;
       }
+      
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>师大滨江C2004班 · 官方网站</title>
+    <title>认证为班级成员 - 师大滨江C2004班</title>
 </head>
 <body class="mdui-theme-primary-pink">
   
   <div class="mdui-toolbar mdui-color-theme mdui-shadow-3">
       <i class="mdui-icon material-icons">&#xe80c;</i>
     
-      <span class="mdui-typo-title">湖南师范大学附属滨江学校 · C2004班</span>
+      <span class="mdui-typo-title">师大滨江C2004班</span>
         <div class="mdui-toolbar-spacer"></div>
       <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
       <a href="login/login.html">登录</a>
