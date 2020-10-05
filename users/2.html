@@ -4,17 +4,18 @@
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css"integrity="sha384-2PJ2u4NYg6jCNNpv3i1hK9AoAqODy6CdiC+gYiL2DVx+ku5wzJMFNdE3RoWfBIRP"crossorigin="anonymous"/>
     <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"integrity="sha384-aB8rnkAu/GBsQ1q6dwTySnlrrbhqDwrDnpVHR2Wgm8pWLbwUnzDcIROX3VvCbaK+"crossorigin="anonymous">
     </script>
-    <script>
+    <script type="text/javascript">
       function myFunction() {
-        var text;
-        text = document.getElementById("numb").value;
-        if (text == "龙腾九霄，遨游四海，四班四班，勇夺桂冠") {
-          text = "姓名:彭筱舟" + "\n" + "职位:班长 ";
+        var text = document.getElementById("numb").value;
+        var sha = sha1(text);
+        if  (sha == "80322ef4730d7597e2fd3d0e62c9799b4bc8c210") {
+          text = "姓名拼写:PXZ" + "\n" + "职位:班长 ";
         } else {
           text = "访问遭拒";
         }
         document.getElementById("demo").innerHTML = text;
       }
+      
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
