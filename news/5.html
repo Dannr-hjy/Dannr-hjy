@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css"integrity="sha384-2PJ2u4NYg6jCNNpv3i1hK9AoAqODy6CdiC+gYiL2DVx+ku5wzJMFNdE3RoWfBIRP"crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"integrity="sha384-aB8rnkAu/GBsQ1q6dwTySnlrrbhqDwrDnpVHR2Wgm8pWLbwUnzDcIROX3VvCbaK+"crossorigin="anonymous">
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻 - 师大滨江C2004班</title>
+</head>
+<body class="mdui-theme-primary-pink">
+  <script src="https://www.sdbjc2004.tk/script/topbar.js"></script>
+  <br>
+  <div class="mdui-container">
+    <a href="../index.html"><button class="mdui-btn mdui-ripple"><i class="mdui-icon material-icons">&#xe31b;</i> 返回</button></a>
+    <h2>期中考试表彰</h2>
+    <ul class="mdui-list">
+      <a href="../users/1.html">
+        <li class="mdui-list-item">
+          <div class="mdui-list-item-avatar"><img src="../img/dannr.jpg"/></div>
+          <div class="mdui-list-item-content">Dannr · 发布于2020.11.21/23:28</div>
+        </li>
+      </a>
+    </ul>
+      
+    <div id="neirong">
+      <h3>关于本次期中考试总结：</h3>
+      <h3 style="display: inline;">一、班级第一名：</h4>
+      <h3 style="color: red;">彭筱舟（年级排名：11）</h3>
+      <h3 style="display: inline;">二、班级单科王</h4>
+      <h3 style="color: red;">语文：申鑫妍（91.5/120）</h3>
+      <h3 style="color: red;">数学：洪嘉逸（109/120）、彭筱舟（109/120）</h3>
+      <h3 style="color: red;">英语：彭筱舟（94/100）</h3>
+    </div>
+    <br>
+        
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+
+    <div id="gitalk-container"></div>     
+    <script type="text/javascript">
+    var gitalk = new Gitalk({
+    // gitalk的主要参数
+      clientID: `36544971bb5f0fb942c8`,   //上面获取到的值
+      clientSecret: `a203338f71834fc5e19931472898ca217bef0213`,//上面获取到的值
+      repo: `sdbjc2004gw`,  //您刚才建立仓库的名字
+      owner: 'Dannr-hjy',   //你的GitHub用户名字
+      admin: ['Dannr-hjy'],  //你的GitHub用户的名字
+      id: 'indow.location.pathname1', //id不能重复，如果重复就会把其他页面的评论引进来
+    });
+      gitalk.render('gitalk-container');
+    </script> 
+    <!-- Gitalk end -->
+  </div>
+</body>
+</html>
