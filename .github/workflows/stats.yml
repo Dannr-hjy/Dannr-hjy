@@ -17,21 +17,30 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Generate language stats
+      - name: Generate light theme
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: "username=Dannr-hjy&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"
-          path: profile/top-langs.svg
+          options: "username=Dannr-hjy&layout=compact&langs_count=8&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&theme=light_github&hide_border=true"
+          path: profile/top-langs-light.svg
           token: ${{ secrets.STATS_PAT }}
           fail_on_error: true
 
-      - name: Commit and push SVG
+      - name: Generate dark theme
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: "username=Dannr-hjy&layout=compact&langs_count=8&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&theme=dark_github&hide_border=true"
+          path: profile/top-langs-dark.svg
+          token: ${{ secrets.STATS_PAT }}
+          fail_on_error: true
+
+      - name: Commit and push SVGs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add profile/top-langs.svg
+          git add profile/top-langs-light.svg profile/top-langs-dark.svg
 
           if ! git diff --cached --quiet; then
             git commit -m "Update language statistics"
