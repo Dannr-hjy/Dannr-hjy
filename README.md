@@ -9,6 +9,16 @@
 - 🚀 Enjoy turning ideas into real, usable applications.
 - 🌐 Interested in web development, mobile app development, game development, and AI agents.
 - 📚 Always learning new things and improving my skills along the way.
+
+## 📊 Languages Stats
+
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile/top-langs-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile/top-langs-light.svg">
+  <img alt="Most Used Languages" src="./profile/top-langs-light.svg">
+</picture>
+
   
 ## 🚀 Projects  
 
