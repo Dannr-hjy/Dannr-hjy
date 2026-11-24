@@ -35,7 +35,7 @@ A fully offline Android class schedule app with no ads and no account required.
 
 ---
 ### 🔔 Soren
-Aan AI-powered Android notification manager that uses LLMs to automatically identify, organize, and turn notifications into calendar events.
+An AI-powered Android notification manager that uses LLMs to automatically identify, organize, and turn notifications into calendar events.
 
 
 *Stay curious. Keep building.* ✨
